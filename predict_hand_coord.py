@@ -6,8 +6,6 @@ from PIL import Image, ImageOps
 from torch import Tensor
 from torchvision.transforms import functional as f
 
-import sys
-sys.path.append('../')
 
 
 hands = mp.solutions.hands.Hands(

@@ -4,15 +4,11 @@ import numpy as np
 from PIL import Image
 from omegaconf import OmegaConf
 from torchvision.transforms import functional as f
-
-import sys
-sys.path.append('../')
-
 from constants import targets
 from classifier.utils import build_model
 
 
-conf = OmegaConf.load('../clf_config.yaml')
+conf = OmegaConf.load('clf_config.yaml')
 
 model = build_model(
     model_name=conf.model.name,

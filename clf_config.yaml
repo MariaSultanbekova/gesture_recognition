@@ -1,0 +1,33 @@
+model:
+  name: "ResNet18"
+  checkpoint: "ResNet18.pth"  # обязательно указывать правильный путь
+  pretrained: true
+  full_frame: true
+  freezed: true
+
+
+dataset:
+  targets:
+    - call
+    - dislike
+    - fist
+    - four
+    - like
+    - mute
+    - ok
+    - one
+    - palm
+    - peace
+    - rock
+    - stop
+    - stop_inverted
+    - three
+    - two_up
+    - two_up_inverted
+    - three2
+    - peace_inverted
+    - no_gesture
+
+  image_size: [224, 224]
+
+device: "cpu"
